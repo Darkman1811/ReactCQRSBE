@@ -18,5 +18,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String name;
-
+    String duration;
+    String startingDate;
+    Double expenses;
 }

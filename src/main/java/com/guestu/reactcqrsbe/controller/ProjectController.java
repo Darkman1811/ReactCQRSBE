@@ -30,7 +30,7 @@ public class ProjectController {
 
     @PutMapping()
     public Project updateProject(@RequestBody Project project){
-        logger.warn("================================= updating  project =================================");
+        logger.warn("================================= updating  project"+project.toString()+" =================================");
         return projectService.updateProject(project);
     }
 
@@ -45,7 +45,6 @@ public class ProjectController {
     public Project getProjectById(@PathVariable Long id){
         logger.warn("================================= Getting  project By Id =================================");
         Project result= projectService.getProjectById(id);
-
         return result;
     }
 
